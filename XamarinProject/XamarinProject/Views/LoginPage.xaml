@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinProject.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1c191a">
+            <Frame BackgroundColor="#1c191a" Padding="24" CornerRadius="0">
+                <Label Text="SatGo" HorizontalTextAlignment="Center" TextColor="Orange" FontSize="45"/>
+            </Frame>
+
+            <Entry 
+               Placeholder="E-Mail"
+               x:Name="Mail"
+               PlaceholderColor="White"
+               TextColor="white"
+               Margin="20"
+               WidthRequest="350"
+               HorizontalOptions="Center"/>
+
+            <Entry 
+               Placeholder="Şifre"
+               x:Name="Sifre"
+               TextColor="White"
+                IsPassword="True"
+               PlaceholderColor="White"
+               Margin="20"
+               WidthRequest="350"
+               HorizontalOptions="Center"/>
+
+            <Button Text="Gırıs"
+                Margin="40"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                BackgroundColor="Orange"
+                x:Name="girisbuton" 
+                Clicked="girisbuton_Clicked"
+                CornerRadius="30"
+                Padding="15"/>
+            <Label Text="veya"
+               TextColor="Orange"
+               HorizontalOptions="Center"
+            />
+            <Button Text="Kayıt Ol"
+                TextColor="Orange"
+                BackgroundColor="#212121"
+                WidthRequest="90"
+                HeightRequest="46"
+                HorizontalOptions="Center"
+                x:Name="kayitbuton"
+                Clicked="kayitbuton_Clicked"/>
+
+            <Button Text="Başlarken->"
+                    Margin="0,20,0,0"
+                    x:Name="tanitimbutton"
+                    Clicked="tanitimbutton_Clicked"
+                BackgroundColor="white"
+                    CornerRadius="30"
+                TextColor="#212121"          
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinProject.Views.SignPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1c191a">
+            <Frame BackgroundColor="#1c191a" Padding="24" CornerRadius="0">
+                <Label Text="Kayıt Ol" HorizontalTextAlignment="Center" TextColor="Orange" FontSize="45"/>
+            </Frame>
+            <ImageButton Source="addimage.png"
+                    Clicked="imageaddbutton"
+                    x:Name="profil"
+                    WidthRequest="80"
+                    HeightRequest="80"
+                    BackgroundColor="#1c191a"/>
+            <ProgressBar x:Name="progressBar" />
+            <Entry 
+               Placeholder="Kullanıcı Adı"
+               x:Name="kadi"
+               TextColor="White"
+               Margin="5"
+               PlaceholderColor="White"
+               WidthRequest="350"
+               HorizontalOptions="Center"/>
+
+            <Entry 
+                Placeholder="E-Mail"
+                x:Name="Mail"
+                TextColor="White"
+                PlaceholderColor="White"
+                Margin="5"
+                WidthRequest="350"
+                 HorizontalOptions="Center"/>
+
+            <Entry 
+                Placeholder="Şifre Oluştur"
+                x:Name="Sifre"
+                IsPassword="True"
+                TextColor="White"
+                PlaceholderColor="White"
+                Margin="5"
+                WidthRequest="350"
+                HorizontalOptions="Center"/>
+            <Entry 
+                Placeholder="Şifre (Tekrar)"
+                IsPassword="True"
+                x:Name="SifreTekrar"
+                TextColor="White"
+                PlaceholderColor="White"
+                Margin="5"
+                WidthRequest="350"
+                HorizontalOptions="Center"/>
+
+            <Button Text="Kayıt Ol"
+                Margin="20"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                x:Name="SignButton" 
+                Clicked="SignButton_Clicked"
+                BackgroundColor="Orange"
+                CornerRadius="30"
+                Padding="5"/>
+
+            <Button Text="Giriş Yap"
+                    TextColor="orange"
+                BackgroundColor="Transparent"
+                WidthRequest="90"
+                HeightRequest="46"
+                HorizontalOptions="Center"
+                x:Name="LoginButton"
+                Clicked="LoginButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

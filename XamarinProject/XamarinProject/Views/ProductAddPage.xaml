@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinProject.Views.ProductAddPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1c191a" >
+            <Frame BackgroundColor="#1c191a" Padding="10" CornerRadius="0">
+                <Label Text="SatGo" HorizontalTextAlignment="Center" TextColor="Orange" FontSize="30"/>
+            </Frame>
+            <Entry 
+               Placeholder="Ürün Adı"
+               x:Name="Product"
+               PlaceholderColor="White"
+               TextColor="white"
+               Margin="20,10,0,0"
+               WidthRequest="350"
+               HorizontalOptions="Center"/>
+
+            <ImageButton Source="addimage.png"
+                    Clicked="OnPickPhotoButtonClicked"
+                    WidthRequest="100"
+                    x:Name="foto"
+                    HeightRequest="100"
+                    BackgroundColor="#1c191a"/>
+            <ProgressBar x:Name="progressBar" />
+            <Label Text="FOTOĞRAF SEÇ"
+                   TextColor="Orange"
+                   HorizontalOptions="Center"></Label>
+            <Entry 
+               Placeholder="Fiyat(₺)"
+               x:Name="fiyat"
+               TextColor="White"
+               PlaceholderColor="White"
+               Margin="20,10,0,0"
+               WidthRequest="350"
+               HorizontalOptions="Center"/>
+            <DatePicker TextColor="White"
+                        x:Name="tarih"             
+                        Margin="20,10,0,0">
+            </DatePicker>
+            <Entry 
+               Placeholder="Market Adı"
+               x:Name="Market"
+               TextColor="White"
+               PlaceholderColor="White"
+               Margin="20,10,0,0"
+               WidthRequest="350"
+               HorizontalOptions="Center"/>
+
+            <Button Text="Ekle"
+                Margin="10"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                BackgroundColor="Orange"
+                x:Name="girisbuton" 
+                Clicked="eklebuton_Clicked"
+                CornerRadius="30"
+                Padding="15"/>
+
+            <StackLayout VerticalOptions="Center"                  
+                         BackgroundColor="Orange"
+                         HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center">
+                    <ImageButton 
+                            Source="ev.png"
+                            Aspect="AspectFit"
+                             Margin="0,0,30,0"
+                            HeightRequest="40"         
+                            WidthRequest="40"
+                            BackgroundColor="Orange"
+                            x:Name="HomePageButton"
+                            Clicked="HomePageButton_Clicked"/>
+                    <ImageButton 
+                            Source="star"
+                            Aspect="AspectFit"
+                            Margin="0,0,30,0"
+                            HeightRequest="40"         
+                            WidthRequest="40"
+                            BackgroundColor="Orange"    
+                            x:Name="ProductFollowPageButton"
+                            Clicked="ProductFollowPageButton_Clicked"/>
+                    <ImageButton 
+                            Source="sale"
+                            Aspect="AspectFit"
+                            Margin="0,0,30,0"
+                            HeightRequest="40"         
+                            WidthRequest="40"
+                            BackgroundColor="Orange"
+                            
+                            x:Name="ProductAddPageButton"
+                            Clicked="ProductAddPageButton_Clicked"/>
+                    <ImageButton   
+                            Source="user"
+                            Aspect="AspectFit"
+                        Margin="0,0,0,0"
+                            HeightRequest="40"     
+                            WidthRequest="40"
+                            BackgroundColor="Orange"
+                            x:Name="ProfilePageButton"
+                            Clicked="ProfilePageButton_Clicked" />
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             BackgroundColor="orange"
+                             HorizontalOptions="Start"
+                              Margin="70,0,0,0"
+                         WidthRequest="500">
+                    <Label Text="Ana Sayfa"
+                           TextColor="Black"
+                           FontSize="11"
+                          ></Label>
+                    <Label Text="Favoriler"
+                           TextColor="Black"
+                           FontSize="11"
+                           Margin="20,0,0,0"></Label>
+                    <Label Text="Ürün Ekle"
+                           TextColor="Black"
+                           FontSize="11"
+                           Margin="30,0,0,0"></Label>
+                    <Label Text="Profil"
+                           TextColor="Black"
+                           FontSize="11"
+                           Margin=" 35,0,0,0"></Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinProject.Views.tanitimuc">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1c191a" >
+            <Frame BackgroundColor="#1c191a" >
+
+                <Button Text="GEÇ" x:Name="gecbutton" Clicked="gecbutton_clicked" BackgroundColor="#1c191a" HorizontalOptions="End" TextColor="white" FontSize="15"></Button>
+            </Frame>
+            <Image
+                Source="profilbilgi"
+                Margin="0,30,0,0">
+
+            </Image>
+            <Button Text="DEVAM ->"
+                    x:Name="ileri"
+                    Clicked="ileributton_clicked"
+                    CornerRadius="30"
+                    Margin="0,50,0,0">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

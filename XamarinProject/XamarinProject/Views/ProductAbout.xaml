@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinProject.ProductDetails">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1c191a" >
+            <Frame BackgroundColor="#1c191a" Padding="10" CornerRadius="0">
+                <Label Text="SatGo" HorizontalTextAlignment="Center" TextColor="Orange" FontSize="30"/>
+            </Frame>
+                <Label Text="Ürün Bilgisi"
+                TextColor="white"   
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="Large"/>
+            <Image x:Name="resim"> </Image>
+            
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Margin="30,33,0,0">
+                <Label Text="Ürün Adı:"
+                       TextColor="Black"
+                       BackgroundColor="Orange"
+                   FontSize="Medium"></Label>
+                <Label Text="Yayınevi:"
+                       TextColor="Black"
+                       BackgroundColor="Orange"
+                   FontSize="Medium"></Label>
+                <Label Text="Fiyatı:"
+                       TextColor="Black"
+                       BackgroundColor="Orange"
+                   FontSize="Medium"></Label>
+                <Label Text="Satışa Konulduğu Tarih:"
+                       FontSize="Medium"
+                       TextColor="Black"
+                       BackgroundColor="Orange"></Label>
+            </StackLayout>
+
+                <StackLayout Margin="-20,33,0,0">
+                    <Label x:Name="LabelAd"
+                       TextColor="White"
+                       Margin="30,0,0,0"
+                       FontSize="Medium"/>
+                    <Label x:Name="LabelMarket"
+                       TextColor="White"
+                       Margin="30,0,0,0"
+                       FontSize="Medium"/>
+                    <Label x:Name="LabelFiyat"
+                       TextColor="White"
+                       Margin="30,0,0,0"
+                       FontSize="Medium"/>
+                    <Label x:Name="LabelTarih"
+                       TextColor="White"
+                       Margin="30,0,0,0"
+                       FontSize="Medium"/>
+                </StackLayout>
+            </StackLayout>
+            <Button Text="Geri Dön"
+                Margin="0,120,0,0"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                BackgroundColor="Orange"
+                x:Name="geributon" 
+                Clicked="geributon_clicked"
+                CornerRadius="30"
+                Padding="15"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

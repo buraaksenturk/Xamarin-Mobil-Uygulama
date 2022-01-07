@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinProject.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1c191a" >
+            <Frame BackgroundColor="#1c191a" Padding="10" CornerRadius="0">
+                <Label Text="SatGo" HorizontalTextAlignment="Center" TextColor="Orange" FontSize="30"/>
+            </Frame>
+            
+            <StackLayout Orientation="Horizontal">
+               <SearchBar 
+               Placeholder="Ara"
+               TextChanged="_search"
+               x:Name="found"
+               SearchButtonPressed="searchbutonpressed"   
+               CancelButtonColor="Orange"
+               PlaceholderColor="White"
+               TextColor="Orange"
+               TextTransform="Lowercase"    
+               FontSize="Medium"        
+               FontAttributes="Italic" />
+
+              <ImageButton 
+               Source="Search_Camera"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Margin="13,0,0,0"
+               Aspect="AspectFit"
+               HeightRequest="40"
+               WidthRequest="40" />
+            </StackLayout>
+            <Label
+                Text="Kitaplar"
+                FontSize="25"
+                TextColor="Orange"
+                Margin="20,0,0,0">
+            </Label>
+            
+            <ListView HasUnevenRows="True"
+                  ItemTapped="ProductListView_ItemTapped"
+                  IsRefreshing="True"
+                  IsPullToRefreshEnabled="True"
+                  HorizontalOptions="Center" 
+                  ItemsSource="{Binding urunler}"
+                  x:Name="ProductListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical"  VerticalOptions="Start">
+                               <StackLayout Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Image
+                                     Source="{Binding Fotograf}"
+                                      Margin="0,10,0,0"
+                                      HeightRequest="150"
+                                      WidthRequest="150">
+                                    </Image>
+                                    <StackLayout Orientation="Vertical"  Margin="20,15,0,0">
+                                        
+                                         <Button x:Name="takip"  BackgroundColor="Orange" Text="takibe al" HeightRequest="35" WidthRequest="0"></Button>
+                                          <Label Text="{Binding UrunAdi}" TextColor="White" Margin="0,0,0,0" FontSize="20"/>
+                                          <Label Text="{Binding MarketAdi, StringFormat='{0} Yayınevi'}" FontAttributes="Italic" Margin="0,0,0,0" TextColor="White" FontSize="15"/>
+                                          <Label Text="{Binding ucret, StringFormat='{0} ₺'}" TextColor="Orange" Margin="0,15,0,0" FontSize="30"/>
+                                    </StackLayout>
+                                </StackLayout>
+                             </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout VerticalOptions="Center"                  
+                         BackgroundColor="Orange"
+                         HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center">
+                    <ImageButton 
+                            Source="ev.png"
+                            Aspect="AspectFit"
+                             Margin="0,0,30,0"
+                            HeightRequest="40"         
+                            WidthRequest="40"
+                            BackgroundColor="Orange"
+                            x:Name="HomePageButton"
+                            Clicked="HomePageButton_Clicked"/>
+                    <ImageButton 
+                            Source="star"
+                            Aspect="AspectFit"
+                            Margin="0,0,30,0"
+                            HeightRequest="40"         
+                            WidthRequest="40"
+                            BackgroundColor="Orange"    
+                            x:Name="ProductFollowPageButton"
+                            Clicked="ProductFollowPageButton_Clicked"/>
+                    <ImageButton 
+                            Source="sale"
+                            Aspect="AspectFit"
+                            Margin="0,0,30,0"
+                            HeightRequest="40"         
+                            WidthRequest="40"
+                            BackgroundColor="Orange"
+                            
+                            x:Name="ProductAddPageButton"
+                            Clicked="ProductAddPageButton_Clicked"/>
+                    <ImageButton   
+                            Source="user"
+                            Aspect="AspectFit"
+                        Margin="0,0,0,0"
+                            HeightRequest="40"     
+                            WidthRequest="40"
+                            BackgroundColor="Orange"
+                            x:Name="ProfilePageButton"
+                            Clicked="ProfilePageButton_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             BackgroundColor="orange"
+                             HorizontalOptions="Start"
+                              Margin="70,0,0,0"
+                         WidthRequest="500">
+                    <Label Text="Ana Sayfa"
+                           TextColor="Black"
+                           FontSize="11"
+                          ></Label>
+                    <Label Text="Favoriler"
+                           TextColor="Black"
+                           FontSize="11"
+                           Margin="20,0,0,0"></Label>
+                    <Label Text="Ürün Ekle"
+                           TextColor="Black"
+                           FontSize="11"
+                           Margin="30,0,0,0"></Label>
+                    <Label Text="Profil"
+                           TextColor="Black"
+                           FontSize="11"
+                           Margin=" 35,0,0,0"></Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

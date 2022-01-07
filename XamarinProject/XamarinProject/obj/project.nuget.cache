@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "dY9CX+ee4jyc6R6bFBeo5KGxSldJIYm1xGV0/wCo4SRQDC4gaZPBetQvmcYIjB6honR36xbxz3qycw+zu+fx5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oerha\\XamarinProject\\XamarinProject\\XamarinProject\\XamarinProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oerha\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\firebasedatabase.net\\4.0.7\\firebasedatabase.net.4.0.7.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.reactive\\4.0.0\\system.reactive.4.0.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\oerha\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
